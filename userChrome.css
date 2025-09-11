@@ -1,0 +1,65 @@
+/*---------------------------------------------------------
+Tabs
+-----------------------------------------------------------*/
+/*favicon*/ 
+.tab-icon-image[src="chrome://branding/content/icon32.png"] { 
+	content: url(resources/firefox_nightly_512.png) !important; 
+}
+
+/*close button*/ 
+.tab-close-button {
+  opacity: 0 !important;
+  transition: opacity 0.3s !important;
+  display: -moz-box !important; /* Keeps button in the DOM and layout */
+}
+
+/*clsoe button -not the current tab*/
+.tabbrowser-tab:hover:not([selected]) .tab-close-button {
+  opacity: 0.5 !important;
+  transition: opacity 0.115s !important;
+  cursor: pointer;
+}
+
+/*Hovering over the close button of  tabs makes it brighter*/
+.tabbrowser-tab:hover:not([selected]) .tab-close-button:hover {
+  opacity: 1 !important;
+  background-color: transparent !important;
+  transition: opacity 0.25s !important;
+}
+
+/*close button -current tab*/
+.tabbrowser-tab[selected]:hover .tab-close-button {
+  opacity: 0.5 !important;
+  transition: opacity 0.115s !important;
+}
+
+.tabbrowser-tab[selected]:hover .tab-close-button:hover {
+  opacity: 1 !important;
+  background-color: transparent !important;
+  transition: opacity 0.25s !important;
+}
+
+/*---------------------------------------------------------
+seachbar (STRG-F)
+-----------------------------------------------------------*/
+/* Move Find Bar (Ctrl+F) to top */
+findbar {
+  -moz-box-ordinal-group: 0 !important;
+  order: -1 !important;
+  border-top: 1px solid var(--chrome-content-separator-color) !important;
+  border-bottom: none !important;
+}
+
+browser,
+#content,
+#appcontent {
+  margin-top: 0 !important;
+}
+
+/*---------------------------------------------------------
+Bookmarks
+-----------------------------------------------------------*/
+
+//TODO make bookmark textcolor (+icons) less bright
+
+

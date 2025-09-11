@@ -1,0 +1,29 @@
+/*logo*/
+@-moz-document url(about:home), url(about:newtab) {
+    .logo-and-wordmark .wordmark {
+       margin-inline-start: 7px !important; /*to put the logo closer to the firefox text*/
+    }
+    .logo {
+       /*replace firefox logo with nightly version and size it acordingly*/
+       background-image: url(resources/firefox_nightly_512.png) !important;
+       background-size: 64px 64px !important;	
+    }	
+
+
+   /*automatically set right background*/
+  .outer-wrapper {
+    background-image: url(new_tab_wallpaper.jpg) !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    color: grey !important; /* Text color */
+  }
+
+
+   .newtab-search-text{
+    newtab-search-icon: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAEklEQVR4nGNgGAWjYBSMAggAAAQQAA") !important;
+   }
+
+   .search-wrapper{
+      padding-top: 34px !important;
+   }
+}
