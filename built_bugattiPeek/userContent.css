@@ -1,12 +1,20 @@
 /*logo*/
 @-moz-document url(about:home), url(about:newtab) {
+    .logo-and-wordmark {
+      flex-direction: row-reverse !important;
+      position: absolute !important;
+      left: 490px !important;
+      top: 156px !important;
+    }
+
     .logo-and-wordmark .wordmark {
-       margin-inline-start: 7px !important; /*to put the logo closer to the firefox text*/
+      margin-inline-start: 4px !important; /*to put the logo closer to the firefox text*/
     }
     .logo {
        /*replace firefox logo with nightly version and size it acordingly*/
        background-image: url(resources/firefox_nightly_512.png) !important;
        background-size: 64px 64px !important;	
+       transform: scale(0.8) !important;
     }	
 
 
@@ -34,8 +42,8 @@
       padding-inline-start: 16px !important; /*left shift to fill the hole:D*/
    }
 
-   /*searchbar width (let the cat look over the bar)*/
+   /**/
    .search-wrapper .search-inner-wrapper {
-      width: 675px !important; /*before (short version) 601px*/
+      width: 601px !important;
    }
 }
