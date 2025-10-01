@@ -1,2 +1,5 @@
-/resources/
 /temp/
+
+#to not conflict with currently active userChrome and userContent
+/userChrome.css
+/userContent.css
